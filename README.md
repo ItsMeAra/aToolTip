@@ -1,16 +1,3 @@
-Quick Facts
-
-    * Lightweight (only 3kb uncompressed)
-    * Easy to use
-    * Choice of fixed, on click or follow mouse tooltip
-    * Highly customizable
-    * Compatable with Firefox 2.5+, Safari, Opera, Chrome and Internet Explorer 6, 7 & 8
-    
-    For usage and demo visit: http://ara-abcarians.com/jquery/atooltip/
-
-
-
-
 # [aToolTip][1]
 
 [DOWNLOAD][2] [DEMO][3] 
