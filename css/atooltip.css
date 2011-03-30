@@ -20,8 +20,8 @@ a.aToolTipCloseBtn {
 	text-indent:-9999px;
 	outline:none;
 	position:absolute;
-	top:-15px;
-	right:-15px;
+	top:-20px;
+	right:-30px;
 	margin:2px;
 	padding:4px;
 }
