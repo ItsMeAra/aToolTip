@@ -7,3 +7,134 @@ Quick Facts
     * Compatable with Firefox 2.5+, Safari, Opera, Chrome and Internet Explorer 6, 7 & 8
     
     For usage and demo visit: http://ara-abcarians.com/jquery/atooltip/
+
+
+
+
+	 	<div class="primaryWrapper">
+	 	
+	 		<div class="branding">
+	 			<h1 class="logo"><a href="#">aToolTip</a></h1>
+	 		</div>
+			
+		 
+		 
+			<div class="section ctaBtns">
+				<p class="clearfix">
+					<a href="https://github.com/AraLA22/aToolTip" class="dloadBtn" title="Download from Github">DOWNLOAD</a>
+					<a href="#demos" class="demoBtn">DEMO</a>
+				</p>
+			</div>
+			
+			
+			<div class="section qfacts">
+				<h2>Quick Facts</h2>
+				
+				<ul class="quickFacts">
+					<li>Lightweight (only 3kb uncompressed)</li>
+					<li>Easy to use</li>
+					<li>Choice of fixed, on click or follow mouse tooltip</li>
+					<li>Highly customizable</li>
+					<li>Compatable with Firefox 2.5+, Safari, Opera, Chrome and Internet Explorer 6, 7 & 8</li>
+				</ul>
+				<p class="retweet">
+					<script type="text/javascript">
+					tweetmeme_url = 'http://ara-abcarians.com/jquery/atooltip/';
+					tweetmeme_service = 'bit.ly';
+					</script>
+					<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
+					&nbsp;
+					<script type="text/javascript">
+					var fbShare = {
+					url: 'http://ara-abcarians.com/jquery/atooltip/'
+					}
+					</script>
+					
+					<script src="http://widgets.fbshare.me/files/fbshare.js"></script>
+				</p>
+			</div>
+			
+			
+			<div class="section" id="demos">
+		 		<h2>Demos</h2>
+			 
+			 	<ul class="demos">
+			 		<li><a href="#" class="normalTip exampleTip" title="Hello, I am aToolTip">Normal Tooltip</a> - This is a normal tooltip with default settings.</li>
+			 		<li><a href="#" class="fixedTip exampleTip" title="Hello, I am aToolTip">Fixed Tooltip</a> - This is a fixed tooltip that doesnt follow the mouse.</li>
+			 		<li><a href="#" class="clickTip exampleTip" >On Click Tooltip</a> - This is a click activated tooltip with content passed in from 'tipContent' param</li>
+			 		<li><a href="#" class="callBackTip exampleTip" title="Hello, I am aToolTip">Callback Tooltip</a> - This is a click activated tooltip with callback functions.</li>
+			 	</ul>
+
+		 	</div>			
+			
+			
+			<div class="section usage">
+				<h2>Usage</h2>
+				
+<p>Start off by including jQuery as well as the aToolTip plugin</p>				
+				
+<pre name="code" class="html">
+<!-- Include the needed js files-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.atooltip.min.js"></script>
+</pre>
+				
+<p>Initiate the plugin</p>
+				
+<pre name="code" class="jscript">
+// initiate the plugin after DOM has loaded
+$(function(){
+
+	// basic usage
+	$('a.normalTip').aToolTip();
+	
+	// fixed tooltip
+	$('a.fixedTip').aToolTip({
+		fixed: true
+	});
+	
+	// on click tooltip with custom content
+	$('a.clickTip').aToolTip({
+		clickIt: true,
+		tipContent: 'Hello I am aToolTip with content from param'
+	});	
+	
+	// List of all paramaters and their default values:
+	$('a').aToolTip({
+		clickIt: false, 					// set to true for click activated tooltip
+		closeTipBtn: 'aToolTipCloseBtn',	// you can set custom class name for close button on tooltip
+		fixed: false,						// Set true to activate fixed position
+		inSpeed: 400,						// Speed tooltip fades in
+		outSpeed: 100,						// Speed tooltip fades out
+		tipContent: '',						// Pass in content or it will use objects 'title' attribute
+		toolTipClass: 'aToolTip',			// Set custom class for tooltip
+		xOffset: 5,							// x Position
+		yOffset: 5,							// y position
+		onShow: null,						// Callback function on show
+    	onHide: null						// Callback function on hide
+	});
+	
+});
+</pre>
+	
+<p>Basic HTML markup used in the demos</p>	
+	
+<pre name="code" class="html">
+<!-- Here is the markup for the 3 examples-->
+<a href="#" class="normalTip" title="Hello, I am aToolTip">Normal Tooltip</a>
+<a href="#" class="fixedTip" title="Hello, I am aToolTip">Fixed Tooltip</a>
+<a href="#" class="clickTip" >On Click Tooltip</a>
+</pre>	
+				
+				
+<p>What does the tooltip markup look like?</p>					
+				
+<pre name="code" class="html">
+<!-- the tooltip markup looks like this 
+
+<div class="aToolTip">
+	<p class="aToolTipContent">Your tooltip content</p>
+</div>
+
+-->
+</pre>	
