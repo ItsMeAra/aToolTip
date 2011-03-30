@@ -1,4 +1,4 @@
-# [aToolTip][1]
+# aToolTip
 
 
 ## Quick Facts
