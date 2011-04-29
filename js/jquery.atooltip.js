@@ -42,7 +42,7 @@
 				// Activate on hover	
 				obj.hover(function(el){
 					// remove already existing tooltip
-					$('.' + settings.toolTipClass).stop().fadeOut(settings.outSpeed, function(){$(this).remove();});
+					$('.' + settings.toolTipClass).remove();
 					
 					obj.attr({title: ''});						  
 					$('body').append("<div class='"+ settings.toolTipClass +"'><p class='aToolTipContent'>"+ tipContent +"</p></div>");
@@ -85,7 +85,7 @@
 				// Activate on click	
 				obj.click(function(el){
 					// remove already existing tooltip
-					$('.' + settings.toolTipClass).stop().fadeOut(settings.outSpeed, function(){$(this).remove();});
+					$('.' + settings.toolTipClass).remove();
 					
 					obj.attr({title: ''});						  
 					$('body').append("<div class='"+ settings.toolTipClass +"'><p class='aToolTipContent'>"+ tipContent +"</p></div>");
