@@ -44,7 +44,8 @@
 					// remove already existing tooltip
 					$('.' + settings.toolTipClass).remove();
 					
-					obj.attr({title: ''});						  
+					obj.attr({title: ''});
+											  
 					$('body').append("<div class='"+ settings.toolTipClass +"'><p class='aToolTipContent'>"+ tipContent +"</p></div>");
 					$('.' + settings.toolTipClass).css({
 						position: 'absolute',
@@ -87,7 +88,8 @@
 					// remove already existing tooltip
 					$('.' + settings.toolTipClass).remove();
 					
-					obj.attr({title: ''});						  
+					obj.attr({title: ''});
+											  
 					$('body').append("<div class='"+ settings.toolTipClass +"'><p class='aToolTipContent'>"+ tipContent +"</p></div>");
 					$('.' + settings.toolTipClass + ' p.aToolTipContent').append("<a class='"+ settings.closeTipBtn +"' href='#' alt='close'>close</a>");
 					$('.' + settings.toolTipClass).css({
