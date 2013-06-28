@@ -1,4 +1,4 @@
-**NO LONGER MAINTAINED**
+**NO LONGER MAINTAINED**  
 No longer maintaining this plugin, but feel free to fork and do with it as you please. :)
 
 Quick Facts
@@ -9,4 +9,5 @@ Quick Facts
     * Highly customizable
     * Compatable with Firefox 2.5+, Safari, Opera, Chrome and Internet Explorer 6, 7 & 8
     
-    For demo and usage see: http://itsmeara.com/jquery/atooltip/
+
+For demo and usage see: [aToolTip Demo](http://itsmeara.com/jquery/atooltip/)
